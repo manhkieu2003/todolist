@@ -32,8 +32,8 @@ function App() {
   const hanleDelete=(id)=>{
   let crr = [...jobs]
   //2 cách 
-    crr = crr.filter(item => item.id !==id)
-  // crr.splice(crr.findIndex(item => item.id ===id),1)
+   // crr = crr.filter(item => item.id !==id)
+   crr.splice(crr.findIndex(item => item.id ===id),1)
    console.log(crr)
    setJobs(crr)
  
